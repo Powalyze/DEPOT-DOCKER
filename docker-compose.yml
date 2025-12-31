@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: nginx:alpine
+    container_name: powalyze-test
+    ports:
+      - "80:80"
+    volumes:
+      - /root/siteweb:/usr/share/nginx/html
